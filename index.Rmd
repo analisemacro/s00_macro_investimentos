@@ -1,0 +1,136 @@
+---
+title: "Curso de Macroeconomia para Investimentos"
+subtitle: "Aula de Boas-Vindas"
+author: 'Vítor Wilher<br><span style = "font-size: 70%;">Cientista-Chefe da Análise Macro<br>'
+#date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation: 
+        scroll: false
+params:
+  logo_slides: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png"
+---
+
+```{r, file = "./rmd/setup.R", include=FALSE}
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning   = FALSE,  # exibir avisos do console?
+  message   = FALSE,  # exibir mensagens do console?
+  dpi       = 300,    # resolução
+  fig.align = "center"# alinhamento de imagens
+  )
+```
+
+
+```{css, echo=FALSE}
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.tiny55 .remark-code {
+  font-size: 55%; !important;
+}
+.scrollable-slide {
+  height: 400px;
+  overflow-y: auto !important;
+}
+```
+
+
+
+
+### Boas vindas!
+
+Seja bem-vindo(a) ao curso de *Macroeconomia para Investimentos*. Esta é a **aula de boas-vindas ao curso**, onde iremos:
+
+- Alinhar as expectativas;
+- Instruir sobre as aulas, materiais, suporte ao aluno, etc.
+
+Em resumo, passaremos informações importantes para o bom aproveitamento do curso.
+
+
+---
+### Sobre o Professor
+
+Vítor Wilher é Bacharel e Mestre em Economia, pela Universidade Federal Fluminense, trabalhando desde 2015 com ensino e consultoria em ciência de dados. Sua dissertação de mestrado foi na área de política monetária, titulada "Clareza da Comunicação do Banco Central e Expectativas de Inflação: evidências para o Brasil", defendida perante banca composta pelos professores Gustavo H. B. Franco (PUC-RJ), Gabriel Montes Caldas (UFF), Carlos Enrique Guanziroli (UFF) e Luciano Vereda Oliveira (UFF). Já trabalhou em grandes empresas, nas áreas de telecomunicações, energia elétrica, consultoria financeira e consultoria macroeconômica. Atualmente, é Sócio-fundador da Análise Macro e Palestrante.
+
+---
+### Objetivo do Curso
+
+O objetivo do Curso `Macroeconomia para Investimentos` é introduzir os principais conceitos da macroeconomia, como PIB, juros, inflação e câmbio, que têm influência direta sobre os investimentos de pessoas físicas, fundos e grandes empresas. O curso explica conceitos macroeconômicos chaves, bem como mostra a lidar com essas variáveis de forma prática.
+
+---
+### Público-alvo
+
+O Curso de `Macroeconomia para Investimentos` é voltado para profissionais que atuam ou queiram atuar no mercado financeiro. Dividido em duas partes, o objetivo do Curso é o de prover esses profissionais com conhecimento teórico e aplicado sobre os principais conceitos e variáveis macroeconômicas.
+
+---
+### Como será o Curso
+
+Na primeira parte, composta por oito aulas, os alunos serão expostos ao funcionamento da macroeconomia, aos pormenores do PIB, o ciclo econômico, o que determina o crescimento da economia, a relação entre presente e futuro nas decisões de consumo e investimento, a teoria e prática da política monetária e fiscal e os fundamentos técnicos por trás da relação entre variáveis fundamentais como juros e inflação.
+
+---
+### Como será o Curso
+
+A segunda parte do curso é composta por 12 projetos. Nesses projetos, os alunos aprenderão do ZERO a lidar com problemas reais do dia a dia, de forma a entenderem como coletar e tratar dados macroeconômicos. Utilizando linguagens de programação, como R e Python, os alunos aprenderão a coletar e tratar dados diretamente de fontes como IBGE, FGV, Banco Central, IPEADATA, dentre outros. Além disso, aprenderão a tirar inteligência desses dados, por meio da construção de gráficos, relatórios e dashboards.
+
+---
+### Como será o Curso
+
+As aulas do Curso serão entregues semanalmente, conforme cronograma a ser divulgado na sequência. Os alunos poderão ver e rever as videoaulas disponíveis na plataforma da Análise Macro, bem como tirar dúvidas com o nosso suporte individual.
+
+O Curso não tem pré-requisitos e tudo o que for necessário para o bom aproveitamento do aluno será ensinado ao longo das seções, do absoluto ZERO. Além disso, nessa primeira turma, os alunos ainda ganharão como bônus os cursos de R para Análise de Dados e Python para Análise de Dados, de modo a complementarem o bom entendimento das ferramentas mais modernas do mercado para lidar com análise de dados.
+
+---
+### Como será o Curso
+
+Ao final do Curso, é esperado que o aluno tenha total compreensão da macroeconomia, em particular o seu aspecto aplicado e relacionado ao mercado financeiro. Ademais, ao concluir o Curso, estará bastante à frente no mercado, alcançando habilidades de análise de dados que o tornarão um profissional extremamente requisitado por bancos, corretoras, assets e consultorias financeiras.
+
+---
+### Programa do Curso
+
+1. (23/12/22) Introdução à macroeconomia: o que é macroeconomia, motivações clássicas da macroeconomia, como pensam os economistas, conceitos fundamentais, preparando o ambiente;
+2. (30/12/22) O produto interno bruto: o que é o PIB, óticas do PIB, PIB nominal vs. real, deflator do PIB;
+3. (06/01/22) A economia no curto prazo: entendendo o ciclo econômico e o hiato do produto
+4. (13/01/22) A economia no longo prazo: modelo de Solow e extensões
+5. (20/01/22) Economia intertemporal: a microeconomia por trás da macro
+6. (27/01/22) A teoria e a prática da política econômica
+7. (03/02/22) Coleta e tratamento de dados macroeconômicos
+8. (10/02/22) Fundamentos Estatísticos para lidar com dados macroeconômicos
+
+---
+### Programa do Curso
+
+
+- (17/02/22) Projeto de Curso: Coleta e tratamento de dados do PIB
+- (24/02/22) Projeto de Curso: Coleta e tratamento de dados da produção industrial, vendas do comércio e serviços
+- (03/03/22) Projeto de Curso: análise do mercado de trabalho através da PNAD e do CAGED
+- (10/03/22) Projeto de Curso: análise da inflação no Brasil
+- (17/03/22) Projeto de Curso: análise do mercado de crédito
+- (24/03/22) Projeto de Curso: juro real vs juro neutro
+- (31/03/22) Projeto de Curso: Estrutura a Termo da Taxa de Juros
+- (07/04/22) Projeto de Curso: lidando com expectativas do boletim Focus
+- (14/04/22) Projeto de Curso: análise de dados fiscais
+- (21/04/22) Projeto de Curso: ánálise de dados de economia internacional
+- (28/04/22) Projeto de Curso: criando relatórios personalizados de macroeconomia
+- (05/05/22) Projeto de Curso: criando dashboards com indicadores macroeconômicos
+
+---
+### Conhecendo a plataforma do aluno
+
+Vamos, agora, conhecer a plataforma do aluno. 
