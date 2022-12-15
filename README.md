@@ -1,1 +1,1 @@
-# Aula de apresentação do Curso Python para Investimentos
+# Aula de apresentação do Curso Macroeconomia para Investimentos
